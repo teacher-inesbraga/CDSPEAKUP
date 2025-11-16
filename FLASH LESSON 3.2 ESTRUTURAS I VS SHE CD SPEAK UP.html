@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLASH LESSON 3.2 ESTRUTURAS I VS SHE CD SPEAK UP</title>
+<style>
+:root { --primary:#1e3a8a; }
+body {
+  font-family:Arial, sans-serif;
+  background:#f3f4f6;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+h2 {
+  color:var(--primary);
+  font-size:1.6rem;
+}
+.grid {
+  width:100%;
+  max-width:1100px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:16px;
+  margin-top:20px;
+}
+.card { perspective:1200px; height:190px; }
+.card-inner {
+  position:relative;
+  width:100%; height:100%;
+  transform-style:preserve-3d;
+  transition:.55s; cursor:pointer;
+}
+.card-inner.flipped { transform:rotateY(180deg); }
+.card-face {
+  position:absolute; inset:0;
+  border-radius:18px; padding:18px;
+  display:flex; flex-direction:column;
+  justify-content:center; align-items:center;
+  backface-visibility:hidden;
+  text-align:center;
+  box-shadow:0 12px 30px rgba(0,0,0,.22);
+}
+.card-front {
+  background:linear-gradient(135deg,#1e3a8a,#0f172a);
+  color:white;
+}
+.card-back {
+  background:white;
+  color:var(--primary);
+  transform:rotateY(180deg);
+}
+.card-text {
+  font-size:1.35rem; font-weight:600;
+}
+</style>
+</head>
+<body>
+
+<h2>FLASH LESSON 3.2 ESTRUTURAS I VS SHE CD SPEAK UP</h2>
+
+<div class="grid">
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Eu sou capaz de trabalhar.</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">I am able to work.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Ela é capaz de trabalhar.</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">She is able to work.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Eu era capaz de trabalhar.</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">I was able to work.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Ela era capaz de trabalhar.</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">She was able to work.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Eu serei capaz de trabalhar.</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">I will be able to work.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Ela será capaz de trabalhar.</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">She will be able to work.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Eu não sou capaz de trabalhar.</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">I am not able to work.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Ela não é capaz de trabalhar.</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">She is not able to work.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Eu não era capaz de trabalhar.</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">I was not able to work.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Ela não era capaz de trabalhar.</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">She was not able to work.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Eu não serei capaz de trabalhar.</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">I will not be able to work.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Ela não será capaz de trabalhar.</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">She will not be able to work.</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Eu sou capaz de trabalhar?</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">Am I able to work?</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Ela é capaz de trabalhar?</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">Is she able to work?</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Eu era capaz de trabalhar?</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">Was I able to work?</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Ela era capaz de trabalhar?</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">Was she able to work?</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Eu serei capaz de trabalhar?</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">Will I be able to work?</div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-inner">
+    <div class="card-face card-front">
+      <div class="card-text">Ela será capaz de trabalhar?</div>
+    </div>
+    <div class="card-face card-back">
+      <div class="card-text">Will she be able to work?</div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script>
+document.querySelectorAll('.card-inner').forEach(card=>{
+  card.addEventListener('click', ()=>card.classList.toggle('flipped'));
+});
+</script>
+
+</body>
+</html>
