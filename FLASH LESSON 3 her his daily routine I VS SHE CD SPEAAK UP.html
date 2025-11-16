@@ -1,0 +1,645 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLASH LESSON 3 her his daily routine I VS SHE CD SPEAAK UP</title>
+<style>
+:root { --primary:#1e3a8a; }
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+body {
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:radial-gradient(circle at top,#e0ebff 0,#f9fafb 45%,#e5e7eb 100%);
+  min-height:100vh;
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+h1 {
+  color:var(--primary);
+  font-size:1.6rem;
+  margin-bottom:4px;
+  text-align:center;
+}
+.subtitle {
+  font-size:0.85rem;
+  opacity:0.85;
+  text-align:center;
+}
+.grid {
+  width:100%;
+  max-width:1100px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:16px;
+  margin-top:20px;
+}
+.card {
+  perspective:1200px;
+  height:190px;
+}
+.card-inner {
+  position:relative;
+  width:100%;
+  height:100%;
+  transform-style:preserve-3d;
+  transition:transform .55s cubic-bezier(0.34,1.56,0.64,1);
+  cursor:pointer;
+}
+.card-inner.flipped {
+  transform:rotateY(180deg);
+}
+.card-face {
+  position:absolute;
+  inset:0;
+  border-radius:18px;
+  padding:18px;
+  box-shadow:0 12px 30px rgba(15,23,42,.22);
+  backface-visibility:hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+.card-front {
+  background:linear-gradient(135deg,#1e3a8a,#0f172a);
+  color:#f9fafb;
+}
+.card-back {
+  background:#ffffff;
+  color:var(--primary);
+  transform:rotateY(180deg);
+}
+.card-text {
+  font-size:1.35rem;
+  font-weight:600;
+  line-height:1.3;
+}
+.hint {
+  font-size:0.8rem;
+  margin-top:10px;
+  text-align:center;
+  color:#374151;
+}
+@media (max-width:600px) {
+  body { padding:12px; }
+  .card { height:210px; }
+  .card-text { font-size:1.25rem; }
+}
+</style>
+</head>
+<body>
+
+<h1>FLASH LESSON 3 her his daily routine I VS SHE CD SPEAAK UP</h1>
+<div class="subtitle">Frente em português · Verso em inglês · Uma frase por card.</div>
+<p class="hint">Toque no card para ver a frase em inglês. Toque novamente para voltar ao português.</p>
+
+<div class="grid">
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela acorda.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She wakes up.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele levanta.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He gets up.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela toma banho.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She takes a shower.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele faz a barba.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He shaves.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela se veste.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She gets dressed.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele toma café.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He has breakfast.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela sai de casa.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She leaves home.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele vai para __.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He goes to __.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela chega em __.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She gets to __.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele começa o trabalho / a aula.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He starts work / school.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela faz um intervalo.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She takes a break.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele sai do trabalho.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He gets off work.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela almoça.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She has lunch.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele volta para o trabalho.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He goes back to work.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela termina o trabalho / a escola.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She finishes work / school.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele pega um ônibus.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He takes a bus.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela liga o ar-condicionado.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She switches on the air conditioner.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela leva as crianças para a escola.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She drives kids to school.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele pega as crianças na escola.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He picks up the kids from school.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela come.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She eats.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele chega em casa.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He gets home.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela faz compras.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She goes shopping.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele faz o mercado.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He goes grocery shopping.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela janta.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She has dinner.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele limpa.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He cleans.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela bebe.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She drinks.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele faz tarefa.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He does homework.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela ouve música.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She listens to music.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele faz o jantar.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He makes dinner.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela telefona.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She calls.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele descansa.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He rests.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela treina (academia).</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She works out.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele fica de boas.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He hangs out.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela passa tempo com a família.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She spends time with her family.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele passa no/na/em __ (rapidinho).</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He stops by __.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela liga as luzes.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She switches on the lights.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele faz yoga.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He does yoga.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela medita.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She meditates.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele lê.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He reads.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela penteia o cabelo.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She combs her hair.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele lava a louça.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He does the dishes.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela ora / reza.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She prays.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele escova os dentes.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He brushes his teeth.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela configura o alarme.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She sets the alarm.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele desliga as luzes.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He switches off the lights.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela assiste TV.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She watches TV.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela vai dormir.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She goes to bed.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele dorme.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He sleeps.</div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+<script>
+document.querySelectorAll('.card-inner').forEach(inner => {
+  inner.addEventListener('click', () => {
+    inner.classList.toggle('flipped');
+  });
+});
+</script>
+
+</body>
+</html>
