@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speak Up – Lesson 1 (He) – Flashcards</title>
+<style>
+:root {
+  --primary: #1e3a8a;
+  --bg: #f3f4f6;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 { color: var(--primary); margin-bottom: 20px; }
+.grid {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+.card {
+  perspective: 1200px;
+  height: 190px;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: .5s;
+  cursor: pointer;
+}
+.card-inner.flipped { transform: rotateY(180deg); }
+.card-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.18);
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.card-front { background: var(--primary); color: white; }
+.card-back { background: white; color: var(--primary); transform: rotateY(180deg); }
+.card-text { font-size: 1.25rem; font-weight: 600; }
+.small-note { font-size: .75rem; margin-top: 6px; opacity: .85; }
+</style>
+</head>
+<body>
+
+<h2>Speak Up – Lesson 1 (He)</h2>
+
+<div class="grid">
+
+<!-- Template repeated for each item -->
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Deixe-me compartilhar algumas coisas sobre o meu _.</div>
+    
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">Let me share a few things about my _.</div>
+    
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">O nome dele é _.</div>
+    
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">His name is _.</div>
+    
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">O sobrenome dele é _.</div>
+    
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">His last name is _.</div>
+    
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">O nome completo dele é _.</div>
+    
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">His full name is _.</div>
+    
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele é de _.</div>
+    <div class="small-note">(Brasil)</div>
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He comes from _.</div>
+    <div class="small-note">(Brasil)</div>
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele é de _.</div>
+    <div class="small-note">(Brasil)</div>
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He is from _.</div>
+    <div class="small-note">(Brasil)</div>
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">A cidade natal dele é _.</div>
+    
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">His hometown is _.</div>
+    
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele foi criado em _.</div>
+    
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He was raised in _.</div>
+    
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">A cidade onde ele mora atualmente é _.</div>
+    
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">His current city is _.</div>
+    
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele mora em _.</div>
+    
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He lives in _.</div>
+    
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele tem _ anos.</div>
+    
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He is _ years old.</div>
+    
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">O aniversário dele é em _.</div>
+    <div class="small-note">(mês e dia)</div>
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">His birthday is on _.</div>
+    <div class="small-note">(mês e dia)</div>
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">O aniversário dele é em _.</div>
+    <div class="small-note">(mês)</div>
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">His birthday is in _.</div>
+    <div class="small-note">(mês)</div>
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele é _.</div>
+    <div class="small-note">(introverted, extroverted)</div>
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He is _.</div>
+    <div class="small-note">(introverted, extroverted)</div>
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele trabalha para _.</div>
+    
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He works for _.</div>
+    
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele ocupa o cargo de _.</div>
+    
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He holds the position of _.</div>
+    
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele não tem trabalho no momento.</div>
+    
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He doesn't have a job right now.</div>
+    
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele é _.</div>
+    <div class="small-note">(student, retired, housekeeper, unemployed)</div>
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He is a/an _.</div>
+    <div class="small-note">(student, retired, housekeeper, unemployed)</div>
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele estuda em _.</div>
+    <div class="small-note">(school, university)</div>
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He goes to _.</div>
+    <div class="small-note">(school, university)</div>
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele estudou em _.</div>
+    <div class="small-note">(school, university)</div>
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He went to _.</div>
+    <div class="small-note">(school, university)</div>
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele é formado em _.</div>
+    
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He has a degree in _.</div>
+    
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele tem diploma de _.</div>
+    <div class="small-note">(kindergarten, elementary, junior high, high school)</div>
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He has a _. diploma.</div>
+    <div class="small-note">(kindergarten, elementary, junior high, high school)</div>
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele tem certificação em _.</div>
+    <div class="small-note">(technical course, postgraduate, other certification)</div>
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He is certified in _.</div>
+    <div class="small-note">(technical course, postgraduate, other certification)</div>
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele está fazendo _.</div>
+    <div class="small-note">(English)</div>
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He is taking _.</div>
+    <div class="small-note">(English)</div>
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele está se graduando em _.</div>
+    <div class="small-note">(curso universitário)</div>
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He is majoring/graduating in _.</div>
+    <div class="small-note">(curso universitário)</div>
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele está no _.</div>
+    <div class="small-note">(kindergarten, elementary, junior high, high school, college, university)</div>
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He is in _.</div>
+    <div class="small-note">(kindergarten, elementary, junior high, high school, college, university)</div>
+  </div>
+</div></div>
+
+<div class="card"><div class="card-inner">
+  <div class="card-face card-front">
+    <div class="card-text">Ele não estuda.</div>
+    
+  </div>
+  <div class="card-face card-back">
+    <div class="card-text">He doesn't study.</div>
+    
+  </div>
+</div></div>
+
+</div>
+
+<script>
+document.querySelectorAll('.card-inner').forEach(card=>{
+  card.addEventListener('click', ()=> card.classList.toggle('flipped'));
+});
+</script>
+
+</body>
+</html>
