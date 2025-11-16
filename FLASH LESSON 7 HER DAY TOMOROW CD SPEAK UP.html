@@ -1,0 +1,633 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLASH LESSON 7 HER DAY TOMOROW CD SPEAK UP</title>
+<style>
+:root { --primary:#1e3a8a; }
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+body {
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:radial-gradient(circle at top,#e0ebff 0,#f9fafb 45%,#e5e7eb 100%);
+  min-height:100vh;
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+h1 {
+  color:var(--primary);
+  font-size:1.6rem;
+  margin-bottom:4px;
+  text-align:center;
+}
+.subtitle {
+  font-size:0.85rem;
+  opacity:0.85;
+  text-align:center;
+}
+.grid {
+  width:100%;
+  max-width:1100px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:16px;
+  margin-top:20px;
+}
+.card {
+  perspective:1200px;
+  height:190px;
+}
+.card-inner {
+  position:relative;
+  width:100%; height:100%;
+  transform-style:preserve-3d;
+  transition:transform .55s cubic-bezier(0.34,1.56,0.64,1);
+  cursor:pointer;
+}
+.card-inner.flipped {
+  transform:rotateY(180deg);
+}
+.card-face {
+  position:absolute;
+  inset:0;
+  border-radius:18px;
+  padding:18px;
+  box-shadow:0 12px 30px rgba(15,23,42,.22);
+  backface-visibility:hidden;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+.card-front {
+  background:linear-gradient(135deg,#1e3a8a,#0f172a);
+  color:#f9fafb;
+}
+.card-back {
+  background:#ffffff;
+  color:var(--primary);
+  transform:rotateY(180deg);
+}
+.card-text {
+  font-size:1.3rem;
+  font-weight:600;
+  line-height:1.3;
+}
+.hint {
+  font-size:0.8rem;
+  margin-top:10px;
+  text-align:center;
+  color:#374151;
+}
+@media (max-width:600px) {
+  body { padding:12px; }
+  .card { height:210px; }
+  .card-text { font-size:1.2rem; }
+}
+</style>
+</head>
+<body>
+
+<h1>FLASH LESSON 7 HER DAY TOMOROW CD SPEAK UP</h1>
+<div class="subtitle">Frente em português · Verso em inglês · Uma frase por card (futuro dela e dele).</div>
+<p class="hint">Toque no card para ver a frase em inglês. Toque novamente para voltar ao português.</p>
+
+<div class="grid">
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela acordará.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will wake up.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele se levantará.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will get up.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela tomará banho.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will take a shower.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele se barbeará.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will shave.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela se vestirá.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will get dressed.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele tomará café.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will have breakfast.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela sairá de casa.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will leave home.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele irá para __.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will go to __.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela chegará em __.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will get to __.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele começará o trabalho / a aula.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will start work / school.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela fará um intervalo.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will take a break.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele sairá do trabalho.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will get off work.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela almoçará.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will have lunch.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele voltará para o trabalho.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will go back to work.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela terminará o trabalho / a escola.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will finish work / school.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele pegará um ônibus.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will take a bus.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela ligará o ar-condicionado.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will switch on the air conditioner.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele pegará as crianças na escola.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will pick up the kids from school.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela comerá.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will eat.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele chegará em casa.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will get home.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela fará compras.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will go shopping.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele fará o mercado.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will go grocery shopping.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela jantará.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will have dinner.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele limpará.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will clean.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela beberá.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will drink.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele fará tarefa.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will do homework.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela ouvirá música.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will listen to music.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele fará o jantar.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will make dinner.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela ligará.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will call.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele descansará.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will rest.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela malhará.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will work out.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele ficará de boas.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will hang out.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela passará tempo com a família dela.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will spend time with her family.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele passará no/na/em __ (rapidinho).</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will stop by __.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela ligará as luzes.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will switch on the lights.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele fará yoga.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will do yoga.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela meditará.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will meditate.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele lerá.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will read.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela penteará o cabelo.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will comb her hair.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele lavará a louça.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will do the dishes.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela orará.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will pray.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele escovará os dentes.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will brush his teeth.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela configurará o alarme.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will set the alarm.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele desligará as luzes.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will switch off the lights.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela assistirá TV.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will watch TV.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ele dormirá.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">He will sleep.</div>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="card-text">Ela irá dormir.</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="card-text">She will go to bed.</div>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+<script>
+document.querySelectorAll('.card-inner').forEach(inner => {
+  inner.addEventListener('click', () => {
+    inner.classList.toggle('flipped');
+  });
+});
+</script>
+
+</body>
+</html>
